@@ -1,0 +1,148 @@
+/* GENEL AYARLAR & FONTLAR */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg-color: #f3f4f6;
+    --card-bg: rgba(255, 255, 255, 0.65);
+    --card-border: rgba(255, 255, 255, 0.8);
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --accent-color: #3b82f6;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.bg-gradient-decoration {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, #e0e7ff 0%, #f3f4f6 50%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* YENİ: ARAMA INPUT TASARIMI (GLASSMORPHISM) */
+.search-input {
+    background: rgba(255, 255, 255, 0.5); /* Yarı saydam */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50px; /* Tam oval */
+    padding: 15px 30px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    text-align: center; /* Yazıyı ortala */
+}
+
+.search-input:focus {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15); /* Soft mavi glow */
+    border-color: #fff;
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #9ca3af;
+    font-weight: 300;
+}
+
+/* KART TASARIMI */
+.card {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.01);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.01);
+    background: rgba(255, 255, 255, 0.85);
+    border-color: #fff;
+}
+
+.card-img-top {
+    height: 140px;
+    padding: 20px;
+    object-fit: contain;
+    background: transparent;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* UI ELEMENTLERİ */
+.card-title {
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.temp-text {
+    font-size: 3rem;
+    font-weight: 800;
+    background: -webkit-linear-gradient(45deg, #1f2937, #4b5563);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px 0;
+}
+
+.weather-badge {
+    background-color: #eff6ff !important;
+    color: var(--accent-color) !important;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    box-shadow: none !important;
+}
+
+.detail-item {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-item strong {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+hr {
+    border-top: 1px solid rgba(0,0,0,0.05);
+    margin: 1.5rem 0;
+}
+
+/* UI DÜZENLEMELERİ (GÖRÜNÜRLÜK AYARLARI) */
+.card-body .d-flex {
+    justify-content: center !important; 
+}
+
+.card-body .d-flex .detail-item:nth-child(2) {
+    display: none !important; 
+}
