@@ -25,7 +25,8 @@ Kullanıcılar şehirler arasında anlık arama yapabilir ve her şehrin sıcakl
 * ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) **(ES6+, Fetch API, Async/Await)**
 * **Veri Kaynağı:** [Open-Meteo API](https://open-meteo.com/)
 
-📂 Dosya Yapısı
+## 📂 Dosya Yapısı
+
 weather-app/
 ├── assets/
 │   └── images/          # Hava durumu GIF'leri (sunny, cloudy, rainy, snowy)
