@@ -5,7 +5,7 @@ Bu proje, Türkiye'nin 81 ili için anlık hava durumu verilerini görüntüleye
 Kullanıcılar şehirler arasında anlık arama yapabilir ve her şehrin sıcaklık, rüzgar hızı ve hava durumu ikonlarını dinamik olarak görüntüleyebilir.
 
 ![Project Status](https://img.shields.io/badge/status-active-success.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![License]
 
 ✨ Özellikler
 
