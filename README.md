@@ -25,8 +25,10 @@ Kullanıcılar şehirler arasında anlık arama yapabilir ve her şehrin sıcakl
 * ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) **(ES6+, Fetch API, Async/Await)**
 * **Veri Kaynağı:** [Open-Meteo API](https://open-meteo.com/)
 
+```markdown
 ## 📂 Dosya Yapısı
 
+```text
 weather-app/
 ├── assets/
 │   └── images/          # Hava durumu GIF'leri (sunny, cloudy, rainy, snowy)
@@ -36,7 +38,7 @@ weather-app/
 │   └── app.js           # API istekleri, DOM manipülasyonu ve arama mantığı
 ├── iller.json           # 81 ilin koordinat verileri
 ├── index.html           # Ana sayfa
-
+└── README.md            # Proje dokümantasyonu
 🚀 Kurulum ve Çalıştırma
 Projeyi bilgisayarınıza klonlayın:
 
