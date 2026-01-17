@@ -28,7 +28,6 @@ Kullanıcılar şehirler arasında anlık arama yapabilir ve her şehrin sıcakl
 ```markdown
 ## 📂 Dosya Yapısı
 
-```text
 weather-app/
 ├── assets/
 │   └── images/          # Hava durumu GIF'leri (sunny, cloudy, rainy, snowy)
